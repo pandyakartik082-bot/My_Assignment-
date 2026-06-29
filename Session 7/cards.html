@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist Bar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .playlist-bar {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 15px;
+        }
+
+        .song-card {
+            display: flex;
+            align-items: center; /* Vertical center */
+            width: 220px;
+            height: 80px;
+            background: #282828;
+            border-radius: 12px;
+            padding: 15px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .song-card:hover {
+            background: #1DB954;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .song-info h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .song-info p {
+            font-size: 14px;
+            color: #b3b3b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="playlist-bar">
+        <div class="song-card">
+            <div class="song-info">
+                <h3>Shape of You</h3>
+                <p>Ed Sheeran</p>
+            </div>
+        </div>
+
+        <div class="song-card">
+            <div class="song-info">
+                <h3>Blinding Lights</h3>
+                <p>The Weeknd</p>
+            </div>
+        </div>
+
+        <div class="song-card">
+            <div class="song-info">
+                <h3>Perfect</h3>
+                <p>Ed Sheeran</p>
+            </div>
+        </div>
+
+        <div class="song-card">
+            <div class="song-info">
+                <h3>Stay</h3>
+                <p>Justin Bieber</p>
+            </div>
+        </div>
+
+        <div class="song-card">
+            <div class="song-info">
+                <h3>Believer</h3>
+                <p>Imagine Dragons</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
